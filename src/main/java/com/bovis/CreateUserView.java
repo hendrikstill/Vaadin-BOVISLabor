@@ -59,8 +59,8 @@ public class CreateUserView extends CustomComponent implements View {
 
         });
 
-        fieldGroup.setItemDataSource(new User(ID_FACTORY.incrementAndGet(), "",
-                "", "", "", "", false));
+//        fieldGroup.setItemDataSource(new User(ID_FACTORY.incrementAndGet(), "",
+//                "", "", "", "", false));
 
         final Label messageLabel = new Label();
         layout.addComponent(messageLabel);
@@ -75,8 +75,8 @@ public class CreateUserView extends CustomComponent implements View {
             public void postCommit(CommitEvent commitEvent)
                     throws CommitException {
                 userDAO.saveUser(fieldGroup.getItemDataSource().getBean());
-                fieldGroup.setItemDataSource(new User(ID_FACTORY
-                        .incrementAndGet(), "", "", "", "", "", false));
+//                fieldGroup.setItemDataSource(new User(ID_FACTORY
+//                        .incrementAndGet(), "", "", "", "", "", false));
             }
         });
         Button commitButton = new Button("Create");

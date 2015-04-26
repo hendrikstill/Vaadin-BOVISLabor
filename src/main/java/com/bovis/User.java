@@ -5,46 +5,29 @@ import java.io.Serializable;
 public class User implements Serializable {
     private final long id;
 
-    private String firstName = "anonymous";
-    private String lastName = "user";
     private String username = null;
     private String password = null;
-    private String email = null;
     private boolean isAdmin = false;
+    private boolean isOnline = false;
 
     public User() {
         id = -1;
     }
 
-    public User(long id, String username, String password, String firstName,
-            String lastName, String email, boolean isAdmin) {
+    public User(long id, String username, String password, boolean isAdmin, boolean isOnline) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
         this.username = username;
         this.password = password;
-        this.email = email;
         this.isAdmin = isAdmin;
+        this.isOnline = isOnline;
     }
 
-    public String getName() {
-        return firstName + " " + lastName;
+    public boolean isOnline() {
+        return isOnline;
     }
 
-    public String getFirstName() {
-        return firstName;
-    }
-
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
-    }
-
-    public String getLastName() {
-        return lastName;
-    }
-
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setIsOnline(boolean isOnline) {
+        this.isOnline = isOnline;
     }
 
     public String getUsername() {
@@ -63,19 +46,11 @@ public class User implements Serializable {
         this.password = password;
     }
 
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public boolean isAdmin() {
         return isAdmin;
     }
 
-    public void setAdmin(boolean isAdmin) {
+    public void setIsAdmin(boolean isAdmin) {
         this.isAdmin = isAdmin;
     }
 

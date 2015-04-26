@@ -24,7 +24,7 @@ public class UserInfo implements Serializable {
         if (user == null) {
             return "anonymous user";
         } else {
-            return user.getName();
+            return user.getUsername();
         }
     }
 

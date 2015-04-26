@@ -11,16 +11,14 @@ public class TestingUserDAO implements UserDAO, Serializable {
 
     static {
         users = new LinkedList<User>();
-        users.add(new User(0, "admin", "admin", "System", "Administrator",
-                null, true));
-        users.add(new User(1, "user", "user", "Some", "User", null, false));
-        users.add(new User(2, "ernest", "john", "Ernest", "Worthing", null,
-                false));
+
     }
 
     public TestingUserDAO() {
-
+        db = new DatabaseHelper();
     }
+
+
 
     @Override
     public User getUserBy(String username, String password) {
@@ -40,6 +38,21 @@ public class TestingUserDAO implements UserDAO, Serializable {
                 return user;
             }
         }
+        return null;
+    }
+
+    @Override
+    public User loginWithNameAndPassword(String username, String password) {
+        //returns a loginContainer (SQLContainer)
+        db.loginWithUsernameAndPassword(username, password);
+
+        //Create new User object with logged in user and return User object
+
+        return null;
+    }
+
+    @Override
+    public List<User> getFriendsForUser(User user) {
         return null;
     }
 

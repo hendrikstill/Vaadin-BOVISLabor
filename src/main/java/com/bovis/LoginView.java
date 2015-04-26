@@ -33,6 +33,8 @@ public class LoginView extends CustomComponent implements View, ClickListener {
     @Override
     public void enter(ViewChangeEvent event) {
 
+        dbHelp.init();
+
         usernameField = new TextField("Username");
         passwordField = new PasswordField("Password");
         loginButton = new Button("Login");
@@ -44,7 +46,7 @@ public class LoginView extends CustomComponent implements View, ClickListener {
         String userName = dbHelp.getUserName(0);
         usernameField.setValue(userName);
 
-        dbHelp.loginWithUsernameAndPassword("John Doe", "password");
+//        dbHelp.loginWithUsernameAndPassword("John Doe", "password");
 
         VerticalLayout layout = new VerticalLayout();
         setCompositionRoot(layout);

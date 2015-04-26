@@ -84,7 +84,7 @@ public class ChatView extends CustomComponent implements View {
         layout.setSizeFull();
         layout.setMargin(true);
         layout.setSpacing(true);
-        layout.addComponent(new Label("Talking to " + targetUser.getName()));
+        layout.addComponent(new Label("Talking to " + targetUser.getUsername()));
         layout.addComponent(generateBackButton());
         layout.addComponent(buildChatLayout());
         return layout;
@@ -169,7 +169,7 @@ public class ChatView extends CustomComponent implements View {
     }
 
     private Button generateUserSelectionButton(final User user) {
-        Button button = new Button(user.getName());
+        Button button = new Button(user.getUsername());
         button.addClickListener(new ClickListener() {
 
             @Override

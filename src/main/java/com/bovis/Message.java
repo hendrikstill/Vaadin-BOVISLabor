@@ -45,7 +45,7 @@ public class Message {
         sb.append("[");
         sb.append(sendTime.toLocaleString());
         sb.append("] ");
-        sb.append(sender.getName());
+        sb.append(sender.getUsername());
         sb.append(": ");
         sb.append(message);
         return sb.toString();
