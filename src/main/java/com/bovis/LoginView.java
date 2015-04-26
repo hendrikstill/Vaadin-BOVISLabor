@@ -46,7 +46,15 @@ public class LoginView extends CustomComponent implements View, ClickListener {
         String userName = dbHelp.getUserName(0);
         usernameField.setValue(userName);
 
-//        dbHelp.loginWithUsernameAndPassword("John Doe", "password");
+        dbHelp.register("Tim", "password2");
+
+//        User currentLoggedInUser = dbHelp.loginWithUsernameAndPassword("John Doe", "password");
+//
+//        if(currentLoggedInUser != null){
+//            //logged in
+//        }else {
+//            //wrong username and/or password
+//        }
 
         VerticalLayout layout = new VerticalLayout();
         setCompositionRoot(layout);

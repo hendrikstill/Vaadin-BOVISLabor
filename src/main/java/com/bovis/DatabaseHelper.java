@@ -2,11 +2,14 @@ package com.bovis;
 
 
 import com.google.gwt.thirdparty.guava.common.collect.Iterables;
+import com.sun.org.apache.xpath.internal.operations.Bool;
 import com.vaadin.data.util.sqlcontainer.SQLContainer;
 import com.vaadin.data.util.sqlcontainer.connection.JDBCConnectionPool;
 import com.vaadin.data.util.sqlcontainer.connection.SimpleJDBCConnectionPool;
 import com.vaadin.data.util.sqlcontainer.query.FreeformQuery;
 import com.vaadin.data.util.sqlcontainer.query.TableQuery;
+
+import com.vaadin.addon.sqlcontainer.RowItem;
 
 import java.sql.SQLException;
 import java.util.Collection;
@@ -69,7 +72,40 @@ public class DatabaseHelper {
         return userContainer;
     }
 
-    public int loginWithUsernameAndPassword(String username, String password){
+    public User register(String username, String password){
+
+
+
+        Object rowId = userContainer.addItem();
+            userContainer.getItem(rowId).
+                    getItemProperty("NAME").
+                    setValue(username);
+
+            userContainer.getItem(rowId).
+                    getItemProperty("PASSWORD").
+                    setValue(password);
+
+            userContainer.getItem(rowId).
+                    getItemProperty("ADMIN").
+                    setValue(0);
+
+            userContainer.getItem(rowId).
+                    getItemProperty("ONLINE").
+                    setValue(0);
+
+        try {
+            userContainer.commit();
+
+        } catch (UnsupportedOperationException e) {
+            e.printStackTrace();
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+
+    public User loginWithUsernameAndPassword(String username, String password){
 //        userContainer.addContainerFilter(new Compare.Equal("name",username));
         try {
             FreeformQuery query = new FreeformQuery("SELECT * FROM USER WHERE " +
@@ -88,26 +124,38 @@ public class DatabaseHelper {
             int id = Integer.valueOf(userContainer.getItem(o).getItemProperty("ID").getValue().toString());
             String lName = userContainer.getItem(o).getItemProperty("NAME").getValue().toString();
             String lPassword = userContainer.getItem(o).getItemProperty("PASSWORD").getValue().toString();
-            boolean admin = Boolean.valueOf(
-                    userContainer.
-                            getItem(o).
-                            getItemProperty("ADMIN").
-                            getValue().
-                            toString());
-            boolean online = Boolean.valueOf(
+
+            int admin = Integer.valueOf(userContainer.
+                    getItem(o).
+                    getItemProperty("ADMIN").getValue().toString());
+
+            int online = Integer.valueOf(
                     userContainer.
                             getItem(o).
                             getItemProperty("ONLINE").
                             getValue().
                             toString());
 
-            User user = new User(id, lName, lPassword, admin, online);
 
-            String s = o.toString();
-            return Integer.getInteger(s);
+
+            User user = new User(id, lName, lPassword, convertIntToBoolean(admin), convertIntToBoolean(online));
+
+            return user;
         } else {
-            return -1;
+            return null;
         }
+    }
+
+
+    /*
+    Genious method to convert Integer into Boolean.
+    We are too stupid!
+     */
+    private Boolean convertIntToBoolean(int arg){
+        if(arg == 1)
+            return true;
+        else
+            return false;
     }
 
     public User getUserById(int id){

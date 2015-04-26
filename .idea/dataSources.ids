@@ -25,8 +25,8 @@
       <column name="ID" sqlType="INTEGER" precision="32" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
       <column name="NAME" sqlType="CHARACTER" precision="100" scale="0" nullable="false" jdbcType="1"/>
       <column name="PASSWORD" sqlType="CHARACTER" precision="10" scale="0" nullable="false" jdbcType="1"/>
-      <column name="ADMIN" sqlType="BOOLEAN" precision="0" scale="0" nullable="true" jdbcType="16"/>
-      <column name="ONLINE" sqlType="BOOLEAN" precision="0" scale="0" nullable="true" jdbcType="16"/>
+      <column name="ADMIN" sqlType="INTEGER" precision="32" scale="0" nullable="true" jdbcType="4"/>
+      <column name="ONLINE" sqlType="INTEGER" precision="32" scale="0" nullable="true" jdbcType="4"/>
       <primary-key name="SYS_PK_10113" columns="ID"/>
     </table>
   </data-source>
