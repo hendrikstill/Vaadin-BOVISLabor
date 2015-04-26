@@ -15,8 +15,9 @@ public class TestingUserDAO implements UserDAO, Serializable {
     }
 
     public TestingUserDAO() {
-        db = new DatabaseHelper();
+
     }
+
 
 
 
@@ -52,6 +53,11 @@ public class TestingUserDAO implements UserDAO, Serializable {
     }
 
     @Override
+    public User registerUserWithNameAndPassword(String username, String password) {
+        return db.register(username,password);
+    }
+
+    @Override
     public List<User> getFriendsForUser(User user) {
         return null;
     }
@@ -73,6 +79,12 @@ public class TestingUserDAO implements UserDAO, Serializable {
     @Override
     public List<User> getUsers() {
         return users;
+    }
+
+    @Override
+    public void initDatabaseService() {
+        db = new DatabaseHelper();
+        db.init();
     }
 
 }

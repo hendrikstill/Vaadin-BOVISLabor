@@ -17,10 +17,10 @@ public class MyVaadinUI extends UI {
     @Inject
     private javax.enterprise.event.Event<NavigationEvent> navigationEvent;
 
+
     @Override
     protected void init(VaadinRequest request) {
-
-        navigationEvent.fire(new NavigationEvent("login"));
+        navigationEvent.fire(new NavigationEvent("register"));
     }
 
 }

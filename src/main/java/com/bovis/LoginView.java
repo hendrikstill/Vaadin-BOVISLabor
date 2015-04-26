@@ -33,20 +33,12 @@ public class LoginView extends CustomComponent implements View, ClickListener {
     @Override
     public void enter(ViewChangeEvent event) {
 
-        dbHelp.init();
 
         usernameField = new TextField("Username");
         passwordField = new PasswordField("Password");
         loginButton = new Button("Login");
         loginButton.addClickListener(this);
         loginButton.setClickShortcut(KeyCode.ENTER);
-
-
-        helperLabel = new Label();
-        String userName = dbHelp.getUserName(0);
-        usernameField.setValue(userName);
-
-        dbHelp.register("Tim", "password2");
 
 //        User currentLoggedInUser = dbHelp.loginWithUsernameAndPassword("John Doe", "password");
 //
@@ -79,6 +71,7 @@ public class LoginView extends CustomComponent implements View, ClickListener {
         String username = usernameField.getValue();
         String password = passwordField.getValue();
 
+        userDAO.initDatabaseService();
         User loginUser = userDAO.getUserBy(username, password);
         if (loginUser == null) {
             new Notification("Wrong password", Notification.TYPE_ERROR_MESSAGE)

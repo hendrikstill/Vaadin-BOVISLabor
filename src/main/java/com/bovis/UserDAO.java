@@ -11,9 +11,13 @@ public interface UserDAO {
 
     public User loginWithNameAndPassword(String username, String password);
 
+    public User registerUserWithNameAndPassword(String username, String password);
+
     public List<User> getFriendsForUser(User user);
 
     public boolean saveUser(User user);
 
     public List<User> getUsers();
+
+    public void initDatabaseService();
 }

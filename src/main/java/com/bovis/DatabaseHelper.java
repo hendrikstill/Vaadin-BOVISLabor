@@ -74,8 +74,6 @@ public class DatabaseHelper {
 
     public User register(String username, String password){
 
-
-
         Object rowId = userContainer.addItem();
             userContainer.getItem(rowId).
                     getItemProperty("NAME").
@@ -101,7 +99,7 @@ public class DatabaseHelper {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return null;
+        return loginWithUsernameAndPassword(username,password);
     }
 
 
