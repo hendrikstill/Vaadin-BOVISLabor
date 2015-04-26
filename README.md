@@ -20,4 +20,4 @@ TODO
 	
 - set Online to 1 when user is logged in
 - Registration
-	- check if usernamen and passwor empty
+	- check if username and passwor empty

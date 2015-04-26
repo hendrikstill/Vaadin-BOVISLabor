@@ -26,6 +26,7 @@ public class DatabaseHelper {
     private SQLContainer personContainer = null;
     private SQLContainer userContainer = null;
     private SQLContainer loginContainer = null;
+    private SQLContainer friendlistContainer = null;
 
     public DatabaseHelper(){
 
@@ -146,7 +147,7 @@ public class DatabaseHelper {
 
 
     /*
-    Genious method to convert Integer into Boolean.
+    Genius method to convert Integer into Boolean.
     We are too stupid!
      */
     private Boolean convertIntToBoolean(int arg){
@@ -174,26 +175,56 @@ public class DatabaseHelper {
                 .getValue().toString();
     }
 
-    /**
-     * Adds a new city to the container and commits changes to the database.
-     *
-     * @param cityName
-     *            Name of the city to add
-     * @return true if the city was added successfully
-     */
-    public boolean addCity(String cityName) {
-        userContainer.getItem(userContainer.addItem()).getItemProperty("NAME")
-                .setValue(cityName);
+
+    private void updateFriendlistContainer(){
+        TableQuery query = new TableQuery("FRIENDLIST",connectionPool);
+        query.setVersionColumn("VERSION");
+
         try {
-            userContainer.commit();
-            return true;
+            friendlistContainer = new SQLContainer(query);
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+    }
+
+    public User confirmFriendForUser(User user, User friend){
+
+        addFriendForUser(user, friend);
+
+        /*
+        TODO: need to confirm friend request for both data rows: 1:3 and 3:1
+        Filter on friendlistContainer for IDs 1 and 3 and update CONFIRMED column to 1
+        Alternative: get friendlistContainer of just this datarow with freeformquery
+         */
+
+
+
+        return null;
+    }
+
+    public User addFriendForUser(User user, User friend){
+        updateFriendlistContainer();
+        Object rowId = friendlistContainer.addItem();
+
+        friendlistContainer.getItem(rowId).
+                getItemProperty("USER_ID_1").
+                setValue(user.getId());
+
+        friendlistContainer.getItem(rowId).
+                getItemProperty("USER_ID_2").
+                setValue(friend.getId());
+
+        try {
+            friendlistContainer.commit();
+
         } catch (UnsupportedOperationException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-        return false;
-    }
 
+        return null;
+    }
 
 }

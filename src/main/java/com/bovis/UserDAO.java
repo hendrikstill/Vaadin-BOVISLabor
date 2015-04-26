@@ -15,6 +15,12 @@ public interface UserDAO {
 
     public List<User> getFriendsForUser(User user);
 
+    public User addFriendForUser(User user, User friend);
+
+    public User confirmFriendForUser(User user, User friend);
+
+    public User removeFriendForUser(User user, User friend);
+
     public boolean saveUser(User user);
 
     public List<User> getUsers();

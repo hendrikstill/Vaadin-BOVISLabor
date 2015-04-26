@@ -2,25 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c63b4cdd-bc14-44e9-acbd-9f6b75fc841e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bovis/RegistrationView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bovis/DatabaseHelper.class" afterPath="$PROJECT_DIR$/target/classes/com/bovis/DatabaseHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/DatabaseHelper.class" afterPath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/DatabaseHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bovis/MyVaadinUI.class" afterPath="$PROJECT_DIR$/target/classes/com/bovis/MyVaadinUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/MyVaadinUI.class" afterPath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/MyVaadinUI.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestDB.lck" afterPath="$PROJECT_DIR$/TestDB.lck" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bovis/TestingUserDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/bovis/TestingUserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/TestingUserDAO.class" afterPath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/TestingUserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bovis/UserDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/bovis/UserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/UserDAO.class" afterPath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/UserDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bovis/DatabaseHelper.java" afterPath="$PROJECT_DIR$/src/main/java/com/bovis/DatabaseHelper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bovis/LoginView.java" afterPath="$PROJECT_DIR$/src/main/java/com/bovis/LoginView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bovis/MyVaadinUI.java" afterPath="$PROJECT_DIR$/src/main/java/com/bovis/MyVaadinUI.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestDB.log" afterPath="$PROJECT_DIR$/TestDB.log" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestDB.properties" afterPath="$PROJECT_DIR$/TestDB.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestDB.script" afterPath="$PROJECT_DIR$/TestDB.script" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bovis/TestingUserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/bovis/TestingUserDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bovis/UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/bovis/UserDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Vaadin-BOVISLabor.iws" />
@@ -75,6 +65,24 @@
         <option name="myItemId" value="PUBLIC.PUBLIC" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="FRIENDLIST" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DbRootNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="HSQLDB - TestDB" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="PUBLIC.PUBLIC" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -87,32 +95,82 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/DatabaseHelper.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
+              <caret line="197" column="84" selection-start-line="197" selection-start-column="84" selection-end-line="197" selection-end-column="84" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#1943#1944#0" expanded="true" />
+                <element signature="e#1981#1982#0" expanded="true" />
+                <element signature="e#2027#2028#0" expanded="true" />
+                <element signature="e#2063#2064#0" expanded="true" />
+                <element signature="method#convertIntToBoolean#0;class#DatabaseHelper#0" expanded="false" />
+                <element signature="e#4788#4789#0" expanded="true" />
+                <element signature="e#4815#4816#0" expanded="true" />
+                <element signature="e#4871#4872#0" expanded="true" />
+                <element signature="e#4898#4899#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ListenerMethod.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/vaadin-server/7.4.4/vaadin-server-7.4.4.jar!/com/vaadin/event/ListenerMethod.class">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.16">
-              <caret line="232" column="0" selection-start-line="232" selection-start-column="0" selection-end-line="232" selection-end-column="0" />
+            <state vertical-scroll-proportion="-5.172414">
+              <caret line="10" column="17" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="MarkdownPreviewEditor">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/UserDAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RegistrationView.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/RegistrationView.java">
+      <file leaf-file-name="TestingUserDAO.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/TestingUserDAO.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+              <caret line="71" column="51" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="51" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#1481#1482#0" expanded="true" />
+                <element signature="e#1537#1538#0" expanded="true" />
+                <element signature="e#1615#1616#0" expanded="true" />
+                <element signature="e#1675#1676#0" expanded="true" />
+                <element signature="e#1752#1753#0" expanded="true" />
+                <element signature="e#1779#1780#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegistrationView.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/RegistrationView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.11967546">
+              <caret line="18" column="18" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="18" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyVaadinUI.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/MyVaadinUI.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="22" column="58" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="58" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,7 +187,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PUBLIC.PUBLIC.USER" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PUBLIC.PUBLIC.USER" pinned="false" current-in-tab="false">
         <entry file="dbDummy://dbtable:/2eb1d985/27a515c3-dd41-4895-994f-4d1650d4c5c8/PUBLIC.PUBLIC.USER">
           <provider editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
@@ -170,13 +228,13 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bovis/Message.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bovis/CreateUserView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bovis/ChatView.java" />
-        <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bovis/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bovis/MyVaadinUI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bovis/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bovis/TestingUserDAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bovis/RegistrationView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bovis/LoginView.java" />
+        <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bovis/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bovis/TestingUserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bovis/DatabaseHelper.java" />
       </list>
     </option>
   </component>
@@ -232,7 +290,7 @@
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
     <option name="width" value="1440" />
-    <option name="height" value="832" />
+    <option name="height" value="831" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -751,15 +809,15 @@
       <workItem from="1429891019831" duration="501000" />
       <workItem from="1430036867054" duration="649000" />
       <workItem from="1430040371898" duration="715000" />
-      <workItem from="1430041456592" duration="6868000" />
+      <workItem from="1430041456592" duration="9734000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10256000" />
+    <option name="totallyTimeSpent" value="13122000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="832" extended-state="0" />
+    <frame x="0" y="23" width="1440" height="831" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.49713877" order="-1" side_tool="false" content_ui="tabs" />
@@ -772,8 +830,8 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16881259" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2945946" sideWeight="0.62732476" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2945946" sideWeight="0.37267524" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29499322" sideWeight="0.62732476" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29499322" sideWeight="0.37267524" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32837838" sideWeight="0.45851216" order="7" side_tool="false" content_ui="tabs" />
@@ -806,14 +864,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/com/bovis/DatabaseHelper.java</url>
-          <line>184</line>
-          <properties />
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="13" />
     </breakpoint-manager>
     <watches-manager />
@@ -829,6 +879,15 @@
           <caret line="38" column="139" selection-start-line="38" selection-start-column="139" selection-end-line="38" selection-end-column="139" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#2027#2028#0" expanded="true" />
+            <element signature="e#2063#2064#0" expanded="true" />
+            <element signature="method#convertIntToBoolean#0;class#DatabaseHelper#0" expanded="false" />
+            <element signature="e#4788#4789#0" expanded="true" />
+            <element signature="e#4815#4816#0" expanded="true" />
+            <element signature="e#4871#4872#0" expanded="true" />
+            <element signature="e#4898#4899#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -908,6 +967,15 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#2027#2028#0" expanded="true" />
+            <element signature="e#2063#2064#0" expanded="true" />
+            <element signature="method#convertIntToBoolean#0;class#DatabaseHelper#0" expanded="false" />
+            <element signature="e#4788#4789#0" expanded="true" />
+            <element signature="e#4815#4816#0" expanded="true" />
+            <element signature="e#4871#4872#0" expanded="true" />
+            <element signature="e#4898#4899#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -926,6 +994,15 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#2027#2028#0" expanded="true" />
+            <element signature="e#2063#2064#0" expanded="true" />
+            <element signature="method#convertIntToBoolean#0;class#DatabaseHelper#0" expanded="false" />
+            <element signature="e#4788#4789#0" expanded="true" />
+            <element signature="e#4815#4816#0" expanded="true" />
+            <element signature="e#4871#4872#0" expanded="true" />
+            <element signature="e#4898#4899#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -936,6 +1013,15 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#2027#2028#0" expanded="true" />
+            <element signature="e#2063#2064#0" expanded="true" />
+            <element signature="method#convertIntToBoolean#0;class#DatabaseHelper#0" expanded="false" />
+            <element signature="e#4788#4789#0" expanded="true" />
+            <element signature="e#4815#4816#0" expanded="true" />
+            <element signature="e#4871#4872#0" expanded="true" />
+            <element signature="e#4898#4899#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -1013,17 +1099,6 @@
           <caret line="8" column="9" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="9" />
           <folding />
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.379311">
-          <caret line="22" column="42" selection-start-line="22" selection-start-column="42" selection-end-line="22" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="MarkdownPreviewEditor">
-        <state />
       </provider>
     </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/com/vaadin/external/atmosphere/atmosphere-runtime/2.2.4.vaadin5/atmosphere-runtime-2.2.4.vaadin5.jar!/org/atmosphere/util/VoidExecutorService.class">
@@ -1120,59 +1195,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/DatabaseHelper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="76" column="0" selection-start-line="76" selection-start-column="0" selection-end-line="76" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/MyVaadinUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36437246">
-          <caret line="18" column="4" selection-start-line="18" selection-start-column="4" selection-end-line="18" selection-end-column="4" />
-          <folding>
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6376518">
-          <caret line="21" column="38" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/TestingUserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.757085">
-          <caret line="86" column="18" selection-start-line="86" selection-start-column="18" selection-end-line="86" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/LoginView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="73" column="38" selection-start-line="73" selection-start-column="38" selection-end-line="73" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/RegistrationView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1189,6 +1215,78 @@
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.172414">
+          <caret line="10" column="17" selection-start-line="10" selection-start-column="2" selection-end-line="10" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="MarkdownPreviewEditor">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/UserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="61" selection-start-line="19" selection-start-column="61" selection-end-line="19" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/TestingUserDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="71" column="51" selection-start-line="71" selection-start-column="51" selection-end-line="71" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1481#1482#0" expanded="true" />
+            <element signature="e#1537#1538#0" expanded="true" />
+            <element signature="e#1615#1616#0" expanded="true" />
+            <element signature="e#1675#1676#0" expanded="true" />
+            <element signature="e#1752#1753#0" expanded="true" />
+            <element signature="e#1779#1780#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/DatabaseHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="197" column="84" selection-start-line="197" selection-start-column="84" selection-end-line="197" selection-end-column="84" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1943#1944#0" expanded="true" />
+            <element signature="e#1981#1982#0" expanded="true" />
+            <element signature="e#2027#2028#0" expanded="true" />
+            <element signature="e#2063#2064#0" expanded="true" />
+            <element signature="method#convertIntToBoolean#0;class#DatabaseHelper#0" expanded="false" />
+            <element signature="e#4788#4789#0" expanded="true" />
+            <element signature="e#4815#4816#0" expanded="true" />
+            <element signature="e#4871#4872#0" expanded="true" />
+            <element signature="e#4898#4899#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/MyVaadinUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="58" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/RegistrationView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11967546">
+          <caret line="18" column="18" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="18" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

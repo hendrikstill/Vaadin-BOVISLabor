@@ -63,6 +63,21 @@ public class TestingUserDAO implements UserDAO, Serializable {
     }
 
     @Override
+    public User addFriendForUser(User user, User friend) {
+        return db.addFriendForUser(user, friend);
+    }
+
+    @Override
+    public User confirmFriendForUser(User user, User friend) {
+        return db.confirmFriendForUser(user, friend);
+    }
+
+    @Override
+    public User removeFriendForUser(User user, User friend) {
+        return null;
+    }
+
+    @Override
     public boolean saveUser(User user) {
         try {
             if (users.contains(user)) {
