@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c63b4cdd-bc14-44e9-acbd-9f6b75fc841e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bovis/Content.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bovis/Post.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bovis/TimelineService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bovis/TimelineServiceImpl.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bovis/TimelineView.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/TestDB.lck" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bovis/DatabaseHelper.class" afterPath="$PROJECT_DIR$/target/classes/com/bovis/DatabaseHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/DatabaseHelper.class" afterPath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/DatabaseHelper.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bovis/LoginView.class" afterPath="$PROJECT_DIR$/target/classes/com/bovis/LoginView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/LoginView.class" afterPath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/LoginView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bovis/MyVaadinUI.class" afterPath="$PROJECT_DIR$/target/classes/com/bovis/MyVaadinUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/MyVaadinUI.class" afterPath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/MyVaadinUI.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bovis/RegistrationView.class" afterPath="$PROJECT_DIR$/target/classes/com/bovis/RegistrationView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/RegistrationView.class" afterPath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/RegistrationView.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bovis/TestingUserDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/bovis/TestingUserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/TestingUserDAO.class" afterPath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/TestingUserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/bovis/UserDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/bovis/UserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/UserDAO.class" afterPath="$PROJECT_DIR$/target/vaadin-bovislabor-1.0-SNAPSHOT/WEB-INF/classes/com/bovis/UserDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bovis/LoginView.java" afterPath="$PROJECT_DIR$/src/main/java/com/bovis/LoginView.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bovis/MyVaadinUI.java" afterPath="$PROJECT_DIR$/src/main/java/com/bovis/MyVaadinUI.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bovis/RegistrationView.java" afterPath="$PROJECT_DIR$/src/main/java/com/bovis/RegistrationView.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestDB.log" afterPath="$PROJECT_DIR$/TestDB.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestDB.properties" afterPath="$PROJECT_DIR$/TestDB.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TestDB.script" afterPath="$PROJECT_DIR$/TestDB.script" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/bovis/TimelineView.java" afterPath="$PROJECT_DIR$/src/main/java/com/bovis/TimelineView.java" />
     </list>
     <ignored path="Vaadin-BOVISLabor.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -122,10 +99,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/MyVaadinUI.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
+              <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
               <folding>
                 <element signature="e#465#466#0" expanded="true" />
-                <element signature="e#531#532#0" expanded="true" />
+                <element signature="e#538#539#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -149,8 +126,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/ChatView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="96" column="18" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
-              <folding />
+              <caret line="95" column="23" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -158,9 +137,11 @@
       <file leaf-file-name="TimelineView.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/TimelineView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.13761468">
-              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-              <folding />
+            <state vertical-scroll-proportion="0.39449543">
+              <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -228,11 +209,12 @@
         <option value="$PROJECT_DIR$/src/main/java/com/bovis/DatabaseHelper.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bovis/RegistrationView.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bovis/LoginView.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/bovis/MyVaadinUI.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bovis/Content.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bovis/Post.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bovis/TimelineService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/bovis/TimelineServiceImpl.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bovis/MyVaadinUI.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bovis/TimelineView.java" />
       </list>
     </option>
   </component>
@@ -808,12 +790,12 @@
       <workItem from="1430036867054" duration="649000" />
       <workItem from="1430040371898" duration="715000" />
       <workItem from="1430041456592" duration="9767000" />
-      <workItem from="1430984007341" duration="2350000" />
+      <workItem from="1430984007341" duration="3564000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15505000" />
+    <option name="totallyTimeSpent" value="16719000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="830" extended-state="0" />
@@ -839,8 +821,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.20427808" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3292683" sideWeight="0.49213162" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22357723" sideWeight="0.5422031" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22357723" sideWeight="0.5422031" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32972974" sideWeight="0.49713877" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -888,7 +870,7 @@
           <caret line="22" column="58" selection-start-line="22" selection-start-column="50" selection-end-line="22" selection-end-column="58" />
           <folding>
             <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -996,7 +978,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="199" column="1" selection-start-line="199" selection-start-column="1" selection-end-line="199" selection-end-column="1" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1243,29 +1227,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/LoginView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="67" column="56" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#1187#1386#0" expanded="true" />
-            <element signature="e#1385#1386#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/MyVaadinUI.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="22" column="55" selection-start-line="22" selection-start-column="55" selection-end-line="22" selection-end-column="55" />
-          <folding>
-            <element signature="e#465#466#0" expanded="true" />
-            <element signature="e#531#532#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/Message.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.0183486">
@@ -1324,19 +1285,46 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/LoginView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="67" column="56" selection-start-line="67" selection-start-column="56" selection-end-line="67" selection-end-column="56" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#1187#1386#0" expanded="true" />
+            <element signature="e#1385#1386#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/MyVaadinUI.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="62" selection-start-line="22" selection-start-column="62" selection-end-line="22" selection-end-column="62" />
+          <folding>
+            <element signature="e#465#466#0" expanded="true" />
+            <element signature="e#538#539#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/ChatView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="96" column="18" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
-          <folding />
+          <caret line="95" column="23" selection-start-line="95" selection-start-column="23" selection-end-line="95" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/bovis/TimelineView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.13761468">
-          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
-          <folding />
+        <state vertical-scroll-proportion="0.39449543">
+          <caret line="53" column="26" selection-start-line="53" selection-start-column="26" selection-end-line="53" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
