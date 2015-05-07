@@ -82,7 +82,7 @@ public class LoginView extends CustomComponent implements View, ClickListener {
         String password = passwordField.getValue();
 
         userDAO.initDatabaseService();
-        User loginUser = userDAO.getUserBy(username, password);
+        User loginUser = userDAO.loginWithNameAndPassword(username, password);
         if (loginUser == null) {
             new Notification("Wrong password", Notification.TYPE_ERROR_MESSAGE)
                     .show(getUI().getPage());
@@ -92,6 +92,6 @@ public class LoginView extends CustomComponent implements View, ClickListener {
         user.setUser(loginUser);
         DatabaseHelper db = new DatabaseHelper();
 
-        navigationEvent.fire(new NavigationEvent("chat"));
+        navigationEvent.fire(new NavigationEvent("TimelineView"));
     }
 }

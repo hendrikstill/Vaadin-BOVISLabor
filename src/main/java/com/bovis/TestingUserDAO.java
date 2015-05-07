@@ -44,12 +44,7 @@ public class TestingUserDAO implements UserDAO, Serializable {
 
     @Override
     public User loginWithNameAndPassword(String username, String password) {
-        //returns a loginContainer (SQLContainer)
-        db.loginWithUsernameAndPassword(username, password);
-
-        //Create new User object with logged in user and return User object
-
-        return null;
+        return db.loginWithUsernameAndPassword(username, password);
     }
 
     @Override

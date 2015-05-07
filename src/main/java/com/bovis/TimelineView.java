@@ -17,7 +17,10 @@ public class TimelineView extends CustomComponent implements View {
     private UserDAO userDAO;
 
     @Inject
-    private UserInfo userInfo;
+    private UserInfo user;
+
+
+    private User currentUser;
 
     @Inject
     private TimelineService timelineService;
@@ -26,6 +29,8 @@ public class TimelineView extends CustomComponent implements View {
 
     @Override
     public void enter(ViewChangeListener.ViewChangeEvent viewChangeEvent) {
+        currentUser = user.getUser();
+
         Layout layout = buildMainLayout();
         setCompositionRoot(layout);
     }
@@ -53,6 +58,28 @@ public class TimelineView extends CustomComponent implements View {
         Layout layout = new VerticalLayout();
         layout.setWidth("60%");
         layout.addComponent(new Label("Timeline"));
+
+//        for (Post p : timelineService.getLatestPostsForUser(currentUser)){
+//            layout.addComponent(generatePostPanelForPost(p));
+//        }
+
+        for (int i = 0; i<3; i++){
+            layout.addComponent(generatePostPanelForPost(null));
+        }
+
+
+        return layout;
+    }
+
+    private Component generatePostPanelForPost(Post p) {
+        /*
+        TODO: Create a View/Layout/Panel for specific Post and return it
+         */
+
+        Layout layout = new HorizontalLayout();
+        layout.setWidth("100%");
+        layout.addComponent(new Label(currentUser.getUsername()));
+
         return layout;
     }
 
