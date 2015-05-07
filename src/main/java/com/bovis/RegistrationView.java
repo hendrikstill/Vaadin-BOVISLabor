@@ -41,6 +41,13 @@ public class RegistrationView extends CustomComponent implements View, ClickList
         String password = passwordField.getValue();
         String repeatPassword = repeatPasswordField.getValue();
 
+
+        if(password.equals("") || username.equals("")){
+            new Notification("Password and Username must not be empty!", Notification.TYPE_ERROR_MESSAGE)
+                    .show(getUI().getPage());
+            return;
+        }
+
         if(!password.equals(repeatPassword)){
             new Notification("Passwords do not match! U dumb or wut?", Notification.TYPE_ERROR_MESSAGE)
                     .show(getUI().getPage());

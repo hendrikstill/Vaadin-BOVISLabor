@@ -22,6 +22,7 @@ public class LoginView extends CustomComponent implements View, ClickListener {
     private TextField usernameField;
     private PasswordField passwordField;
     private Button loginButton;
+    private Button redirectToRegistrationButton;
 
     private Label helperLabel;
 
@@ -37,6 +38,14 @@ public class LoginView extends CustomComponent implements View, ClickListener {
         usernameField = new TextField("Username");
         passwordField = new PasswordField("Password");
         loginButton = new Button("Login");
+        redirectToRegistrationButton = new Button("Registration");
+        redirectToRegistrationButton.addClickListener(new ClickListener() {
+            @Override
+            public void buttonClick(ClickEvent clickEvent) {
+                navigationEvent.fire(new NavigationEvent("register"));
+            }
+        });
+
         loginButton.addClickListener(this);
         loginButton.setClickShortcut(KeyCode.ENTER);
 
@@ -56,6 +65,7 @@ public class LoginView extends CustomComponent implements View, ClickListener {
 
         layout.addComponent(usernameField);
         layout.addComponent(passwordField);
+        layout.addComponent(redirectToRegistrationButton);
         layout.addComponent(loginButton);
 
     }
