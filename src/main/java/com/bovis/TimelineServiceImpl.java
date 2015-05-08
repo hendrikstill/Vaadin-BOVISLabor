@@ -16,4 +16,14 @@ public class TimelineServiceImpl implements TimelineService {
          */
         return null;
     }
+
+    @Override
+    public List<User> getFriendsforUser(User currentUser) {
+        /*
+        TODO:Get friends for user
+            * Get all friends
+            * Sort them (online friends first)
+         */
+        return null;
+    }
 }

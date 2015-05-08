@@ -8,4 +8,6 @@ import java.util.List;
 public interface TimelineService {
 
     public List<Post> getLatestPostsForUser(User n);
+
+    public List<User> getFriendsforUser(User currentUser);
 }

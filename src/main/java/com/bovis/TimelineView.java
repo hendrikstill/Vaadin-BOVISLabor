@@ -94,6 +94,18 @@ public class TimelineView extends CustomComponent implements View {
         Layout layout = new VerticalLayout();
         layout.setWidth("20%");
         layout.addComponent(new Label("Friendlist"));
+
+        for (User friend : timelineService.getFriendsforUser(currentUser)){
+            layout.addComponent(generateFriendlistPanelForFriend(friend));
+        }
+
         return layout;
+    }
+
+    private Component generateFriendlistPanelForFriend(User friend) {
+        /*
+        TODO: Create layout for Friend in Friendlist
+         */
+        return null;
     }
 }
