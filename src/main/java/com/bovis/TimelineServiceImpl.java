@@ -11,17 +11,19 @@ public class TimelineServiceImpl implements TimelineService {
     @Inject
     private UserDAO userDAO;
 
+    @Inject
+    private TimelineDAO timelineDAO;
+
     @Override
-    public List<Post> getLatestPostsForUser(User n) {
+    public List<Post> getLatestPostsForUser(User user) {
         /*
         TODO:Get posts for user
             * Get all friends for user n
             * Get all content from all friends
             * Sort content date (newest first)
          */
-
-
-        return null;
+        timelineDAO.initDatabaseService();
+        return timelineDAO.getLatestPostsForUser(user);
     }
 
     @Override

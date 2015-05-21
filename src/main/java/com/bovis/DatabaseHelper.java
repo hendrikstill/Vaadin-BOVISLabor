@@ -28,6 +28,7 @@ public class DatabaseHelper {
     private SQLContainer userContainer = null;
     private SQLContainer loginContainer = null;
     private SQLContainer friendlistContainer = null;
+    private SQLContainer contentContainer = null;
 
     public DatabaseHelper(){
 
@@ -55,11 +56,10 @@ public class DatabaseHelper {
 //            q1.setVersionColumn("VERSION");
 //            personContainer = new SQLContainer(q1);
 
-
-
             TableQuery query = new TableQuery("USER",connectionPool);
             query.setVersionColumn("VERSION");
             userContainer = new SQLContainer(query);
+
 
         } catch (SQLException e){
             e.printStackTrace();
@@ -232,6 +232,46 @@ public class DatabaseHelper {
 
     }
 
+
+    public List<Post> getLatestPostsForUser(User user){
+        List<User> friends = getFriendListForUser(user);
+
+        List<Post> posts = new ArrayList<Post>();
+
+        for(User friend: friends){
+            posts.addAll(getPostsForUser(friend));
+        }
+        return posts;
+    }
+
+    private List<Post> getPostsForUser(User friend) {
+
+        try {
+            FreeformQuery query = new FreeformQuery("SELECT * FROM CONTENT WHERE " +
+                    "USER_ID='"+friend.getId()+"'", connectionPool, "ID");
+            contentContainer = new SQLContainer(query);
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+        List<Post> postList = new ArrayList<Post>();
+        Collection<?> itemIds = contentContainer.getItemIds();
+
+        if(itemIds.size() > 0){
+            for(int i = 0; i < itemIds.size(); i++){
+                Object o = Iterables.get(itemIds, i);
+                int id = Integer.valueOf(contentContainer.getItem(o).getItemProperty("ID").getValue().toString());
+                String description = contentContainer.getItem(o).getItemProperty("DESCRIPTION").getValue().toString();
+                String timestamp = contentContainer.getItem(o).getItemProperty("TIMESTAMP").getValue().toString();
+                postList.add(new Post(friend,timestamp,description));
+            }
+        } else {
+            return postList;
+        }
+
+        return postList;
+    }
+
     public User confirmFriendForUser(User user, User friend){
 
         addFriendForUser(user, friend);
@@ -241,8 +281,6 @@ public class DatabaseHelper {
         Filter on friendlistContainer for IDs 1 and 3 and update CONFIRMED column to 1
         Alternative: get friendlistContainer of just this datarow with freeformquery
          */
-
-
 
         return null;
     }
