@@ -1,11 +1,16 @@
 package com.bovis;
 
+import javax.inject.Inject;
 import java.util.List;
 
 /**
  * Created by Sven-Eric on 5/7/15.
  */
 public class TimelineServiceImpl implements TimelineService {
+
+    @Inject
+    private UserDAO userDAO;
+
     @Override
     public List<Post> getLatestPostsForUser(User n) {
         /*
@@ -14,6 +19,8 @@ public class TimelineServiceImpl implements TimelineService {
             * Get all content from all friends
             * Sort content date (newest first)
          */
+
+
         return null;
     }
 
@@ -24,6 +31,11 @@ public class TimelineServiceImpl implements TimelineService {
             * Get all friends
             * Sort them (online friends first)
          */
-        return null;
+
+        userDAO.initDatabaseService();
+        List<User> friendsForCurrentUser = userDAO.getFriendsForUser(currentUser);
+
+
+        return friendsForCurrentUser;
     }
 }

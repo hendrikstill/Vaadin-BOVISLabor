@@ -1,0 +1,32 @@
+/*C3*/SET SCHEMA PUBLIC
+ALTER TABLE PUBLIC.CONTENT ALTER COLUMN PATH CHAR(100)
+DISCONNECT
+/*C4*/SET SCHEMA PUBLIC
+ALTER TABLE PUBLIC.CONTENT ALTER COLUMN DESCRIPTION CHAR(140)
+DISCONNECT
+/*C5*/SET SCHEMA PUBLIC
+ALTER TABLE PUBLIC.CONTENT ALTER COLUMN PRIVATE INTEGER
+DISCONNECT
+/*C2*/SET SCHEMA PUBLIC
+INSERT INTO CONTENT VALUES(1,'2015-05-21 11:01:47.483000',800,400,'/files/content/235                                                                                  ','This is a nice Post                                                                                                                         ',NULL,4)
+COMMIT
+/*C6*/SET SCHEMA PUBLIC
+ALTER TABLE PUBLIC.CONTENT ADD MEDIA INT NULL
+DISCONNECT
+/*C2*/DELETE FROM CONTENT WHERE ID=1
+INSERT INTO CONTENT VALUES(1,'2015-05-21 11:01:47.483000',800,400,'/files/content/235                                                                                  ','This is a nice Post                                                                                                                         ',NULL,4,1)
+COMMIT
+DELETE FROM CONTENT WHERE ID=1
+INSERT INTO CONTENT VALUES(1,'2015-05-21 11:01:47.483000',800,400,'/files/content/235                                                                                  ','This is a nice Post                                                                                                                         ',0,4,1)
+COMMIT
+/*C7*/SET SCHEMA PUBLIC
+ALTER TABLE PUBLIC.CONTENT ALTER COLUMN WIDTH SET NULL
+DISCONNECT
+/*C8*/SET SCHEMA PUBLIC
+ALTER TABLE PUBLIC.CONTENT ALTER COLUMN HEIGHT SET NULL
+DISCONNECT
+/*C9*/SET SCHEMA PUBLIC
+ALTER TABLE PUBLIC.CONTENT ALTER COLUMN PATH SET NULL
+DISCONNECT
+/*C2*/INSERT INTO CONTENT VALUES(3,'2015-05-21 10:06:21.335000',NULL,NULL,NULL,'This is only a test Post                                                                                                                    ',0,5,0)
+COMMIT
