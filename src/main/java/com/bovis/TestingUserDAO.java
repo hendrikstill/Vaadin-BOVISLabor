@@ -54,7 +54,7 @@ public class TestingUserDAO implements UserDAO, Serializable {
 
     @Override
     public List<User> getFriendsForUser(User user) {
-        return null;
+        return db.getFriendListForUser(user);
     }
 
     @Override

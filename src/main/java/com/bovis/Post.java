@@ -7,12 +7,24 @@ import java.util.Date;
  */
 public class Post {
     private final User owner;
-    private final Date created;
-    private final Content content;
+    private final String created;
+    private final String description;
 
-    public Post(User owner, Date created, Content content) {
+    public Post(User owner, String created, String description) {
         this.owner = owner;
         this.created = created;
-        this.content = content;
+        this.description = description;
+    }
+
+    public User getOwner() {
+        return owner;
+    }
+
+    public String getCreated() {
+        return created;
+    }
+
+    public String getDescription() {
+        return description;
     }
 }

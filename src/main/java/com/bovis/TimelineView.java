@@ -59,13 +59,14 @@ public class TimelineView extends CustomComponent implements View {
         layout.setWidth("60%");
         layout.addComponent(new Label("Timeline"));
 
-//        for (Post p : timelineService.getLatestPostsForUser(currentUser)){
-//            layout.addComponent(generatePostPanelForPost(p));
-//        }
-
-        for (int i = 0; i<3; i++){
-            layout.addComponent(generatePostPanelForPost(null));
+        for (Post p : timelineService.getLatestPostsForUser(currentUser)){
+            layout.addComponent(generatePostPanelForPost(p));
         }
+
+
+//        for (int i = 0; i<3; i++){
+//            layout.addComponent(generatePostPanelForPost(null));
+//        }
 
 
         return layout;
@@ -78,7 +79,7 @@ public class TimelineView extends CustomComponent implements View {
 
         Layout layout = new HorizontalLayout();
         layout.setWidth("100%");
-        layout.addComponent(new Label(currentUser.getUsername()));
+        layout.addComponent(new Label(p.getDescription()));
 
         return layout;
     }
@@ -106,6 +107,10 @@ public class TimelineView extends CustomComponent implements View {
         /*
         TODO: Create layout for Friend in Friendlist
          */
-        return null;
+        Layout layout = new HorizontalLayout();
+        layout.setWidth("100%");
+        layout.addComponent(new Label(friend.getUsername()));
+
+        return layout;
     }
 }

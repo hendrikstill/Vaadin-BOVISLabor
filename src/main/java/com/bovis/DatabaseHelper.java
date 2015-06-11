@@ -12,6 +12,7 @@ import com.vaadin.data.util.sqlcontainer.query.TableQuery;
 import com.vaadin.addon.sqlcontainer.RowItem;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Collection;
 import java.util.List;
 
@@ -27,6 +28,7 @@ public class DatabaseHelper {
     private SQLContainer userContainer = null;
     private SQLContainer loginContainer = null;
     private SQLContainer friendlistContainer = null;
+    private SQLContainer contentContainer = null;
 
     public DatabaseHelper(){
 
@@ -54,11 +56,10 @@ public class DatabaseHelper {
 //            q1.setVersionColumn("VERSION");
 //            personContainer = new SQLContainer(q1);
 
-
-
             TableQuery query = new TableQuery("USER",connectionPool);
             query.setVersionColumn("VERSION");
             userContainer = new SQLContainer(query);
+
 
         } catch (SQLException e){
             e.printStackTrace();
@@ -157,12 +158,55 @@ public class DatabaseHelper {
             return false;
     }
 
+    private User convertObjectIntoUser(Object o){
+        int id = Integer.valueOf(userContainer.getItem(o).getItemProperty("ID").getValue().toString());
+        String lName = userContainer.getItem(o).getItemProperty("NAME").getValue().toString();
+        String lPassword = userContainer.getItem(o).getItemProperty("PASSWORD").getValue().toString();
+
+        int admin = Integer.valueOf(userContainer.
+                getItem(o).
+                getItemProperty("ADMIN").getValue().toString());
+
+        int online = Integer.valueOf(
+                userContainer.
+                        getItem(o).
+                        getItemProperty("ONLINE").
+                        getValue().
+                        toString());
+
+
+
+        return new User(id, lName, lPassword, convertIntToBoolean(admin), convertIntToBoolean(online));
+    }
+
     public User getUserById(int id){
-        return null;
+        Object userItemId = userContainer.getIdByIndex(id);
+        return convertObjectIntoUser(userItemId);
     }
 
     public List<User> getFriendListForUser(User user){
-        return null;
+        List<User> friendList = new ArrayList<User>();
+        try {
+            FreeformQuery query = new FreeformQuery("SELECT * FROM FRIENDLIST WHERE " +
+                    "USER_ID_1="+user.getId()+" AND CONFIRMED="+ 1 +"", connectionPool, "ID");
+            friendlistContainer = new SQLContainer(query);
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+        Collection<?> itemIds = friendlistContainer.getItemIds();
+
+        if(itemIds.size() > 0){
+            for(int i = 0; i < itemIds.size(); i++){
+                Object o = Iterables.get(itemIds, i);
+                int id = Integer.valueOf(friendlistContainer.getItem(o).getItemProperty("USER_ID_2").getValue().toString());
+                friendList.add(getUserById(id));
+            }
+        } else {
+            return null;
+        }
+
+        return friendList;
     }
 
     public boolean setFriendForUser(User user, User friend){
@@ -188,6 +232,46 @@ public class DatabaseHelper {
 
     }
 
+
+    public List<Post> getLatestPostsForUser(User user){
+        List<User> friends = getFriendListForUser(user);
+
+        List<Post> posts = new ArrayList<Post>();
+
+        for(User friend: friends){
+            posts.addAll(getPostsForUser(friend));
+        }
+        return posts;
+    }
+
+    private List<Post> getPostsForUser(User friend) {
+
+        try {
+            FreeformQuery query = new FreeformQuery("SELECT * FROM CONTENT WHERE " +
+                    "USER_ID='"+friend.getId()+"'", connectionPool, "ID");
+            contentContainer = new SQLContainer(query);
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+        List<Post> postList = new ArrayList<Post>();
+        Collection<?> itemIds = contentContainer.getItemIds();
+
+        if(itemIds.size() > 0){
+            for(int i = 0; i < itemIds.size(); i++){
+                Object o = Iterables.get(itemIds, i);
+                int id = Integer.valueOf(contentContainer.getItem(o).getItemProperty("ID").getValue().toString());
+                String description = contentContainer.getItem(o).getItemProperty("DESCRIPTION").getValue().toString();
+                String timestamp = contentContainer.getItem(o).getItemProperty("TIMESTAMP").getValue().toString();
+                postList.add(new Post(friend,timestamp,description));
+            }
+        } else {
+            return postList;
+        }
+
+        return postList;
+    }
+
     public User confirmFriendForUser(User user, User friend){
 
         addFriendForUser(user, friend);
@@ -197,8 +281,6 @@ public class DatabaseHelper {
         Filter on friendlistContainer for IDs 1 and 3 and update CONFIRMED column to 1
         Alternative: get friendlistContainer of just this datarow with freeformquery
          */
-
-
 
         return null;
     }
